@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE configuration
-        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
-    <!--引入数据库-->
-    <properties resource="jdbc.properties"></properties>
 
+    <!--引入数据库配置-->
+    <properties resource="jdbc.properties"/>
 
     <environments default="development">
         <environment id="development">
@@ -20,10 +18,7 @@
         </environment>
     </environments>
 
-
-
     <mappers>
-        <mapper resource="com.cake.mapper"/>
+        <package name="com.cake.mapper"/>
     </mappers>
-
 </configuration>

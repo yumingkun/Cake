@@ -19,7 +19,7 @@ public class Cake {
      * 价格整型
      */
     private Integer price;
-    private byte[] samllImg;
+    private byte[] smallImg;
 
     private Date createTime;
     private Date updateTime;
@@ -45,7 +45,7 @@ public class Cake {
     }
 
     public byte[] getSamllImg() {
-        return samllImg;
+        return smallImg;
     }
 
     public Date getCreateTime() {
@@ -76,8 +76,8 @@ public class Cake {
         this.price = price;
     }
 
-    public void setSamllImg(byte[] samllImg) {
-        this.samllImg = samllImg;
+    public void setSamllImg(byte[] smallImg) {
+        this.smallImg = smallImg;
     }
 
     public void setCreateTime(Date createTime) {

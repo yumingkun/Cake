@@ -7,7 +7,17 @@ public class Category {
     private Long id;
     private String name;
     private Date createTime;
-    private Date upadteTime;
+    private Date updateTime;
+
+    public Category(Long id, String name, Date createTime, Date updateTime) {
+        this.id = id;
+        this.name = name;
+        this.createTime = createTime;
+        this.updateTime = updateTime;
+    }
+
+    public Category() {
+    }
 
     public Long getId() {
         return id;
@@ -21,8 +31,8 @@ public class Category {
         return createTime;
     }
 
-    public Date getUpadteTime() {
-        return upadteTime;
+    public Date getUpdateTime() {
+        return updateTime;
     }
 
     public void setId(Long id) {
@@ -37,7 +47,7 @@ public class Category {
         this.createTime = createTime;
     }
 
-    public void setUpadteTime(Date upadteTime) {
-        this.upadteTime = upadteTime;
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
     }
 }

@@ -1,5 +1,6 @@
 package com.cake.common;
 
+
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -15,9 +16,8 @@ public class MybatisUtils {
     private static Reader reader;
 
     static {
-
-        String resource="config.xml";
         try {
+            String resource="config.xml";
             reader=Resources.getResourceAsReader(resource);
             sqlSessionFactory=new SqlSessionFactoryBuilder().build(reader);
         } catch (IOException e) {
@@ -26,6 +26,7 @@ public class MybatisUtils {
     }
 
     public static SqlSession openSession(){
+
         return sqlSessionFactory.openSession();
     }
 
