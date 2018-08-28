@@ -6,10 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cake-common" />
+        <module name="cake-management" />
         <module name="Common" />
         <module name="Management" />
-        <module name="Site" />
+        <module name="SITE" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Cake-site" target="1.7" />
+      <module name="Site" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

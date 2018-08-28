@@ -10,7 +10,7 @@
   <modules>
     <module>Common</module>
     <module>Management</module>
-    <module>Site</module>
+    <module>SITE</module>
   </modules>
   <packaging>pom</packaging>
 
